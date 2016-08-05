@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font: bold 36px Arial, Helvetica, sans-serif;
+  background: #333;
+  /*margin-top: 20px;*/
+  color: #c00;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrong {
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background: #c00;
+}
+
+@keyframes animation {
+  0% {color: #600; background-color: transparent; border: transparent 2px solid;}
+  50% {color: #600; background-color: #c00; border: #900 2px solid;}
+  100% {color: #600; background-color: transparent; border: transparent 2px;}
+}
+
+body {
+  background-image: url("https://kevinraber.files.wordpress.com/2011/02/july-exhibit-redwood-2-00042.jpg");
+  background-size: 2070px 1210px;
+  background-repeat: no-repeat;
+}
+
+section p {
+  font: bold 24px Arial, Helvetica, sans-serif;
+  background: #ccc;
+  border: #999;
+  color: #666;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+.right {
+  animation-name: canimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background: #0c0;
+  border: #090 2px solid;
+  color: #060;
+}
+
+@keyframes canimation {
+  0% {color: #060; background-color: transparent; border: transparent 2px solid;}
+  50% {color: #060; background-color: #0c0; border: #090 2px solid;}
+  100% {color: #060; background-color: transparent; border: transparent 2px;}
+}
+
+#button {
+  font: bold 24px Arial, Helvetica, sans-serif;
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#greninja {
+  position: absolute;
+  text-align: right;
+}
